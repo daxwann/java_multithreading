@@ -2,10 +2,10 @@ package memory;
 
 public class SeparateObjects {
   public static void main(String[] args) {
-    MyObject myObject = new MyObject();
+//    MyObject myObject = new MyObject();
 
-    Runnable runnable1 = new MyRunnable(myObject);
-    Runnable runnable2 = new MyRunnable(myObject);
+    Runnable runnable1 = new MyRunnable();
+    Runnable runnable2 = new MyRunnable();
 
     Thread thread1 = new Thread(runnable1, "Thread 1");
     Thread thread2 = new Thread(runnable2, "Thread 2");
